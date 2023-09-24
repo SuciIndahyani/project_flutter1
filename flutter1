@@ -1,0 +1,250 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Color(0xffced7d8),
+        appBar: AppBar(
+          backgroundColor: Color(0xff7fe7dc),
+          title: Center(
+            child: Text("Project UJI COBA"),
+          ),
+          leading: IconButton(
+            icon: Icon(
+              Icons.home,
+              color: Colors.white,
+            ),
+            onPressed: () {},
+          ),
+          actions: [
+            IconButton(
+              icon: Icon(
+                Icons.menu,
+                color: Colors.white,
+              ),
+              onPressed: () {},
+            ),
+          ],
+        ),
+        body: ListView(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 20,
+              ),
+              child: ListTile(
+                leading: ClipOval(
+                  child: Image.network(
+                    "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bunga_Mawar.jpg",
+                    width: 50,
+                    height: 50,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                title: Text(
+                  "MAWAR",
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                subtitle: Text(
+                  'Bunga mawar (Rosa hybrida)',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 20,
+              ),
+              child: ListTile(
+                leading: ClipOval(
+                  child: Image.network(
+                    "https://upload.wikimedia.org/wikipedia/commons/6/6e/Melati_Putih_%28Jasminum_sambac%29%2C_Bandung%2C_Jawa_Barat.jpg",
+                    width: 50,
+                    height: 50,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                title: Text(
+                  "MELATI",
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                subtitle: Text(
+                  'Bunga Melati (Jasmine officinale)',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 20,
+              ),
+              child: ListTile(
+                leading: ClipOval(
+                  child: Image.network(
+                    "https://upload.wikimedia.org/wikipedia/commons/6/62/Bunga_Anggrek_Bulan_Putih_18_Oktober_2019.jpg",
+                    width: 50,
+                    height: 50,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                title: Text(
+                  "ANGGREK",
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                subtitle: Text(
+                  'Bunga Anggrek (Orchidaceae)',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 20,
+              ),
+              child: ListTile(
+                leading: ClipOval(
+                  child: Image.network(
+                    "https://upload.wikimedia.org/wikipedia/commons/e/ea/Tulipa_suaveolens_floriade_to_Canberra.jpg",
+                    width: 50,
+                    height: 50,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                title: Text(
+                  "TULIP",
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                subtitle: Text(
+                  'Bunga Tulip (Tulipa)',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 20,
+              ),
+              child: ListTile(
+                leading: ClipOval(
+                  child: Image.network(
+                    "https://upload.wikimedia.org/wikipedia/commons/0/0f/Plumeria_atau_bunga_kamboja.jpg",
+                    width: 50,
+                    height: 50,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                title: Text(
+                  "KAMBOJA",
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                subtitle: Text(
+                  'Bunga Kamboja (Plumeria)',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 20,
+              ),
+              child: ListTile(
+                leading: ClipOval(
+                  child: Image.network(
+                    "https://upload.wikimedia.org/wikipedia/commons/3/39/Nymphea_alba_-_si_teratai_putih.jpg",
+                    width: 50,
+                    height: 50,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                title: Text(
+                  "TERATAI",
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                subtitle: Text(
+                  'Bunga Teratai (Nymphaea)',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 20,
+              ),
+              child: ListTile(
+                leading: ClipOval(
+                  child: Image.network(
+                    "https://upload.wikimedia.org/wikipedia/commons/5/5e/Lily.jpg",
+                    width: 50,
+                    height: 50,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                title: Text(
+                  "LILY",
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                subtitle: Text(
+                  'Bunga lily (Lilium)',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 20,
+              ),
+              child: ListTile(
+                leading: ClipOval(
+                  child: Image.network(
+                    "https://upload.wikimedia.org/wikipedia/commons/a/ab/Dahlia_x_hybrida.jpg",
+                    width: 50,
+                    height: 50,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                title: Text(
+                  "DAHLIA",
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                subtitle: Text(
+                  'Bunga Dahlia (Dahlia variabilis)',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
